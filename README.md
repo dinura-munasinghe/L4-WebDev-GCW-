@@ -41,7 +41,6 @@ Each page follows consistent template with:
 
 ## Development Notes
 - Use semantic HTML5 elements
-- Follow BEM naming conventions for CSS
 - Maintain responsive design across breakpoints
 - Keep consistent spacing and typography
 - Test across varies modern browsers
