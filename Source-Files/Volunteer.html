@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splash Screen - Movement for Better Health</title>
     <link rel="stylesheet" href="/Style-Files/global.css">
+    <link rel="stylesheet" href="/Style-Files/Style-volunteer.css">
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <nav class="main-nav">
@@ -29,6 +31,152 @@
     <!-- Main Content Section -->
     <main>
         <!-- Content will be added here -->
+         <section class="intro">
+            <h2>Become A Volunteer Or Help Out With An Event</h2>
+            <p>Little Intro Related This</p>
+            <button>Get In Touch</button>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Look For An Event Near You</h3>
+                <button>View Calendar</button>
+            </div>
+            <div class="card">
+                <h3>Want To Become A Regular?</h3>
+                <button>Get In Touch</button>
+            </div>
+            <div class="card">
+                <h3>Help Comes In Many Packages</h3>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <button>Get Started</button>
+            </div>
+            <div class="card">
+                <h3>Volunteer And Member Resources</h3>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <button>View Resources</button>
+            </div>
+            <div class="card">
+                <h3>Want To Sponsor An Event?</h3>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <button>Let Us Know</button>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div>
+                500K+
+                <p>Funds</p>
+            </div>
+            <div>
+                88
+                <p>Volunteers</p>
+            </div>
+            <div>
+                12 
+                <p>Cities</p>
+            </div>
+            <div>
+                250+
+                <p>Staff</p>
+            </div>
+        </section>
+               
+        <div class="container">
+            <div class="form-box login">
+                <form action="#">
+                    <h1>Login</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <div class="forgot-link">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <p>or login with social platforms</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-google'></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="form-box register">
+                <form action="#">
+                    <h1>Registration</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Email" required>
+                        <i class='bx bxs-envelope'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <p>or register with social platforms</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-google'></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="toggle-box">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome!</h1>
+                    <h2>Join with Us As a Volunteer</h2>
+                    <p>Don't have an account?</p>
+                    <button class="btn register-btn">Click to Register</button>
+                </div>
+    
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome Back!</h1>
+                    <h4>Create a Account and Join with US</h4>
+                    <p>Already have an account?</p>
+                    <button class="btn login-btn">Login</button>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            const container = document.querySelector('.container');
+            const registerBtn = document.querySelector('.register-btn');
+            const loginBtn = document.querySelector('.login-btn');
+    
+            registerBtn.addEventListener('click', () => {
+                container.classList.add('active');
+            })
+    
+            loginBtn.addEventListener('click', () => {
+                container.classList.remove('active');
+            })
+        </script>
+
+        <section class="contact">
+            <h3>Contact Us to Get More Information</h3>
+            <p>Text Related To This</p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+       
+        
     </main>
 
        <!-- Footer -->
