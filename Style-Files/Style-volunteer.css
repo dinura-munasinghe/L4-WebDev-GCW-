@@ -26,11 +26,15 @@ body {
     background-color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
-    
+}
 
+.intro p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: smaller;
 }
 
 .intro button:hover {
@@ -44,38 +48,97 @@ body {
     gap: 20px;
 }
 
-.card {
+.card-1 {
     background-color: #ffffff;
-    border-radius: 10px;
+    justify-content: center ;
+    border-radius: 30px;
     padding: 20px;
-    width: 200px;
-    text-align: center;
+    width: 350px;
+    height: 200px;
+    margin-bottom: 60px;
+    text-align: left;
     transition: transform 0.3s;
+    font-size: 18px;
+}
+.card-1 p{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: smaller;
 }
 
-.card:hover {
+.card-1:hover {
     transform: scale(1.05);
 }
 
-.card button {
+.card-1 button {
     background-color: #2b5c3f;
     color:#fff;
     border: none;
     padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
+    margin-top: 40px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.card button:hover {
+.card-1 button:hover {
     background-color: #66bd94;
+}
+
+.card-2 {
+    background-color: #ffffff;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 20px;
+    width: 225px;
+    height: 350px;
+    text-align: left;
+    margin-bottom:0px ;
+    transition: transform 0.3s;
+}
+
+.card-2 p{
+    text-align: left;
+    margin-top: 20px;
+    font-size: smaller;
+
+}
+
+.card-2:hover {
+    transform: scale(1.05);
+}
+
+.card-2 button {
+    background-color: #2b5c3f;
+    color:#fff;
+    border: none;
+    padding: 10px;
+    margin-top: 90px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.card-2 button:hover {
+    background-color: #66bd94;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+    margin-bottom: 15px;
 }
 
 .stats {
     display: flex;
     justify-content: space-around;
-    margin: 40px 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     font-weight: bold;
     font-size:45px;
 }
@@ -86,32 +149,37 @@ body {
 }
 .contact {
     background-color: #ffffff;
-    width: auto;
-    height: auto;
+    justify-self: center;
+    width: 700px;
+    height: 400px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 40px 20px;
+    margin-bottom: 20px;
 }
 
 .contact h3 {
-    text-align: center;
+    text-align: left;
+    margin-left: 40px;
 }
 .contact p{
     text-align: left;
     font-size: 15px;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 .contact form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 400px;
-    margin: auto;
+    max-width: 300px;
+    margin-left: auto;
 }
 
 .contact input,
 .contact textarea {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 1px solid #ccc;
 }
 
@@ -120,7 +188,8 @@ body {
     border: none;
     padding: 10px;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
+    width: 100px;
     cursor: pointer;
     transition: background-color 0.3s;
     color:#fff;
@@ -152,7 +221,8 @@ body {
             width: 850px;
             height: 550px;
             background: #fff;
-            margin: 40px,20px;
+            margin-top: 80px;
+            margin-bottom: 80px;
             border-radius: 30px;
             box-shadow: 0 0 30px rgba(0, 0, 0, .2);
             overflow: hidden;
@@ -230,7 +300,8 @@ body {
         }
 
         .forgot-link {
-            margin: -15px 0 15px;
+            margin-top: -15px;
+            margin-bottom: 15px;
         }
 
         .forgot-link a {
@@ -238,105 +309,125 @@ body {
             color: #333;
         }
 
-        .btn {
-            width: 100%;
-            height: 48px;
-            background: #2b5c3f;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            color: #fff;
-            font-weight: 600;
-        }
+.btn {
+    width: 100%;
+    height: 48px;
+    background: #2b5c3f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-        }
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
 
-        .social-icons a {
-            display: inline-flex;
-            padding: 10px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            font-size: 24px;
-            color: #333;
-            margin: 0 8px;
-        }
+.social-icons a {
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #333;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
 
-        .toggle-box {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
+.toggle-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
-        .toggle-box::before {
-            content: '';
-            position: absolute;
-            left: -250%;
-            width: 300%;
-            height: 100%;
-            background: #45a66a;
-            /* border: 2px solid red; */
-            border-radius: 150px;
-            z-index: 2;
-            transition: 1.8s ease-in-out;
-        }
+.toggle-box::before {
+    content: '';
+    position: absolute;
+    left: -250%;
+    width: 300%;
+    height: 100%;
+    background: #45a66a;
+    border-radius: 150px;
+    z-index: 2;
+    transition: 1.8s ease-in-out;
+}
 
         .container.active .toggle-box::before {
-            left: 50%;
-        }
+    left: 50%;
+}
 
-        .toggle-panel {
-            position: absolute;
-            width: 50%;
-            height: 100%;
-            /* background: seagreen; */
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 2;
-            transition: .6s ease-in-out;
-        }
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: .6s ease-in-out;
+}
 
-        .toggle-panel.toggle-left {
-            left: 0;
-            transition-delay: 1.2s;
-        }
+.toggle-panel.toggle-left {
+    left: 0;
+    transition-delay: 1.2s;
+}
 
-        .container.active .toggle-panel.toggle-left {
-            left: -50%;
-            transition-delay: .6s;
-        }
+.container.active .toggle-panel.toggle-left {
+    left: -50%;
+    transition-delay: .6s;
+}
 
-        .toggle-panel.toggle-right {
-            right: -50%;
-            transition-delay: .6s;
-        }
+.toggle-panel.toggle-right {
+    right: -50%;
+    transition-delay: .6s;
+}
 
-        .container.active .toggle-panel.toggle-right {
-            right: 0;
-            transition-delay: 1.2s;
-        }
+.container.active .toggle-panel.toggle-right {
+    right: 0;
+    transition-delay: 1.2s;
+}
 
-        .toggle-panel p {
-            margin-bottom: 20px;
-        }
+.toggle-panel p {
+    margin-bottom: 20px;
+}
 
-        .toggle-panel .btn {
-            width: 160px;
-            height: 46px;
-            background: transparent;
-            border: 2px solid #fff;
-            box-shadow: none;
-        }
-        .toggle-box button:hover{
-            background-color: #66bd94;
-        }
+.toggle-panel .btn {
+    width: 160px;
+    height: 46px;
+    background: transparent;
+    border: 2px solid #fff;
+    box-shadow: none;
+}
+
+.toggle-box button:hover{
+    background-color: #66bd94;
+}
+/* Default - Show Login Form */
+#login {
+    transform: translateX(0);
+}
+
+/* Hide Register Form Initially */
+#register {
+    transform: translateX(100%);
+}
+
+/* Show Register When Clicked */
+:target#register {
+    transform: translateX(0);
+}
+
+/* Hide Login When Register is Clicked */
+:target#login {
+    transform: translateX(-100%);
+}
+
 
         @media screen and (max-width: 650px) {
             .container {
@@ -400,9 +491,6 @@ body {
                 font-size: 30px;
             }
         }
-
-
-        /* -- External Social Link CSS Styles -- */
 
         #source-link {
             top: 120px;

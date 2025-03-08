@@ -38,25 +38,35 @@
         </section>
 
         <section class="cards">
-            <div class="card">
+            <div class="card-1">
+                <p>Browse events</p>
                 <h3>Look For An Event Near You</h3>
-                <button>View Calendar</button>
+                <a href="https://calendar.google.com/" target="_blank">
+                    <button>View on Calender</button>
+                </a>
             </div>
-            <div class="card">
+            <div class="card-1">
+                <p>Join</p>
                 <h3>Want To Become A Regular?</h3>
                 <button>Get In Touch</button>
             </div>
-            <div class="card">
+        </section>
+
+        <section class="cards">
+            <div class="card-2">
+                <div class="circle"></div>
                 <h3>Help Comes In Many Packages</h3>
                 <p>Lorem ipsum dolor sit amet...</p>
                 <button>Get Started</button>
             </div>
-            <div class="card">
+            <div class="card-2">
+                <div class="circle"></div>
                 <h3>Volunteer And Member Resources</h3>
                 <p>Lorem ipsum dolor sit amet...</p>
                 <button>View Resources</button>
             </div>
-            <div class="card">
+            <div class="card-2">
+                <div class="circle"></div>
                 <h3>Want To Sponsor An Event?</h3>
                 <p>Lorem ipsum dolor sit amet...</p>
                 <button>Let Us Know</button>
@@ -95,7 +105,7 @@
                         <i class='bx bxs-lock-alt'></i>
                     </div>
                     <div class="forgot-link">
-                        <a href="#">Forgot Password?</a>
+                        <a href="#forgot">Forgot Password?</a>
                     </div>
                     <button type="submit" class="btn">Login</button>
                     <p>or login with social platforms</p>
@@ -150,21 +160,7 @@
                 </div>
             </div>
         </div>
-        
-        <script>
-            const container = document.querySelector('.container');
-            const registerBtn = document.querySelector('.register-btn');
-            const loginBtn = document.querySelector('.login-btn');
     
-            registerBtn.addEventListener('click', () => {
-                container.classList.add('active');
-            })
-    
-            loginBtn.addEventListener('click', () => {
-                container.classList.remove('active');
-            })
-        </script>
-
         <section class="contact">
             <h3>Contact Us to Get More Information</h3>
             <p>Text Related To This</p>
