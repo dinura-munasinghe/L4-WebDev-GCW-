@@ -160,7 +160,21 @@
                 </div>
             </div>
         </div>
+        
+        <script>
+            const container = document.querySelector('.container');
+            const registerBtn = document.querySelector('.register-btn');
+            const loginBtn = document.querySelector('.login-btn');
     
+            registerBtn.addEventListener('click', () => {
+                container.classList.add('active');
+            })
+    
+            loginBtn.addEventListener('click', () => {
+                container.classList.remove('active');
+            })
+        </script>
+
         <section class="contact">
             <h3>Contact Us to Get More Information</h3>
             <p>Text Related To This</p>
